@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+    background: url('/media/homepage_background.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -56,11 +56,11 @@ body {
 }
 
 .text-black {
-    color: #000 !important;
+    color: #f01515 ;
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid black ;
 }
 
 /* -------------------------------- Media Queries */
