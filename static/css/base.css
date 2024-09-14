@@ -45,9 +45,6 @@ body {
     color: white;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
@@ -93,5 +90,10 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
     }
 }
