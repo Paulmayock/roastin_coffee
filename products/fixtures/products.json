@@ -1,0 +1,79 @@
+[
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "roastin1",
+      "name": "Galway Roast Ground Coffee 200gr",
+      "description": "Galway Roast 3 Bean Blend Ground Coffee, a true masterpiece crafted with utmost care. This renowned blend comprises 100% premium Arabica beans sourced from the lush regions of Brazil, Guatemala, and Honduras",
+      "price": 10.99,
+      "image": "galway_bean_ground.jpg"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "roastin2",
+      "name": "Galway Roast Whole bean Coffee 200gr",
+      "description": "The Galway Roast whole bean coffee has become renowned for its consistent quality and distinctive flavor since its creation in 2008. This famous three-bean blend has remained unchanged over the years, a testament to its exceptional taste and popularity among coffee lovers.",
+      "price": 10.99,
+      "image": "galway_bean_wholebean.jpg"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "roastin3",
+      "name": "Bean West Bolivia Ground 200gr",
+      "description": "A family run boutique, this coffee ground is certified organic with hints of Chocolate, Hazelnut, Grape and Orange",
+      "price": 11.99,
+      "image": "beanwest_bolivia_ground.jpg"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "roastin4",
+      "name": "Bean West Congo Ground 200gr",
+      "description": "A family run boutique, this coffee ground is amazingly clean, sweet and fruity with aromas like cranberry, dried fig, peach and caramel",
+      "price": 11.99,
+      "image": "beanwest_congo_ground.jpg"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "roastin5",
+      "name": "Bean West Decaf 200gr",
+      "description": "A family run boutique, this coffee ground is Swiss Water process decaffeinated coffee. Beans are decaffeinated using high pressure mountain water washing out 99.9% of the caffeine.",
+      "price": 12.99,
+      "image": "beanwest_decaf_ground.jpg"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "roastin6",
+      "name": "Bialetti Rainbow Brewer",
+      "description": "The Bialetti Rainbow Brewer produces a rich, authentic espresso in just minutes. The aluminium pot features Bialetti’s distinctive eight-sided shape that allows it to diffuse heat perfectly to enhance the aroma of your coffee",
+      "price": 25.99,
+      "image": "Bialetti_brewer.jpg"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "roastin7",
+      "name": "Bodum - Java French Press 3 Cup",
+      "description": "The Java french press can make upt o 3 cups of fresh brewed coffee",
+      "price": 21.99,
+      "image": "frenchpress.jpg"
+    }
+  }
+]
