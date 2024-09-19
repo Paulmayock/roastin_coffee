@@ -1,5 +1,9 @@
 from django.db import models
 
+class Category(models.Model):
+    name = models.CharField(max_length=254)
+    friendly_name = models.CharField(max_length=254, null=True, blank=True)
+
 # Create your models here.
 class Product(models.Model):
     sku = models.CharField(max_length=254, null=True, blank=True)
