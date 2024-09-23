@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure-ptj1dk3e_c_fsz3$d5@0onl@4-b#xx4h3j^3!ul%=rt5mpq45h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-paulmayock-roastincoffe-h6ym9qelhf3.ws.codeinstitute-ide.net', 'localhost']
+ALLOWED_HOSTS = ['roastin-coffee-847d35823b48.herokuapp.com',
+                '8000-paulmayock-roastincoffe-h6ym9qelhf3.ws.codeinstitute-ide.net', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-paulmayock-roastincoffe-h6ym9qelhf3.ws.codeinstitute-ide.net']
 
