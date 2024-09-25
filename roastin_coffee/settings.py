@@ -111,8 +111,7 @@ WSGI_APPLICATION = 'roastin_coffee.wsgi.application'
 
 #if 'DATABASE_URL' in os.environ:
 DATABASES = {
-    'default': dj_database_url.parse('postgres://ulut732z06o:CzwgYuRFhJqH@ep-gentle-mountain-a23bxz6h-pooler.eu-central-1.aws.neon.tech/vapor_jolt_swear_486104')
-    #'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 #else:
 #    DATABASES = {
@@ -162,7 +161,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    '/var/www/static/',
+]
+
+#STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
