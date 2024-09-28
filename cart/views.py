@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 
 from products.models import Product
@@ -13,13 +13,15 @@ def view_cart(request):
 def add_to_cart(request, item_id):
     """ Add a quantity of the specified product to the shopping cart """
 
-    product = Product.objects.get(pk=item_id)
+    product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     cart = request.session.get('cart', {})
 
     if item_id in list(cart.keys()):
         cart[item_id] += quantity
+        messages.success(request, f'Updated {product.name} quantity to {bag[item_id]}')
+
     else:
         cart[item_id] = quantity
         messages.success(request, f'Added {product.name} to your cart')
@@ -29,7 +31,8 @@ def add_to_cart(request, item_id):
 
 def adjust_cart(request, item_id):
     """ adjust the the shopping cart amount"""
-
+    
+    product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     cart = request.session.get('cart', {})
 
@@ -40,6 +43,8 @@ def adjust_cart(request, item_id):
         cart[item_id] += quantity
     else:
         cart[item_id] = quantity
+        messages.success(request, f'Updated {product.name} quantity to {bag[item_id]}')
+
 
     request.session['cart'] = cart
     return redirect(reverse('view_cart'))  
@@ -47,6 +52,7 @@ def adjust_cart(request, item_id):
 def remove_from_cart(request, item_id):
     """ remove item from cart"""
 
+    product = get_object_or_404(Product, pk=item_id)
     cart = request.session.get('cart', {})
 
     if quantity > 0:
