@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.utils.text import slugify
 from profiles.models import UserProfile
+from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget
 
 slug = models.SlugField()
 

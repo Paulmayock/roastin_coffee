@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from . import views
 
 urlpatterns = [
@@ -12,4 +12,6 @@ urlpatterns = [
      path('like/<slug:slug>', views.PostLike.as_view(), name='post_like'),
      path('delete_comment/<int:pk>', views.DeleteComment.as_view(),
           name='delete_comment'),
+     path('summernote/', include('django_summernote.urls')),
+     path('editor/', include('django_summernote.urls')),     
 ]
