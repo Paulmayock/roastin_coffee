@@ -38,3 +38,66 @@ Below is a set of wireframes designs to brainstorm ideas of what the website wou
 
 As part of the Agile process I created user stories to aid with planning for the project. Although these were added to the project board in the final stages of the project, they were brainstormed before and during the project completion.
 
+### As a User
+
+* I can view what products are availble to purchase.
+* I can add choosen products to a shopping cart.
+* I can view and update my shopping cart.
+* I can make purchases securely.
+* I can register to the site.
+* I can view and update my profile.
+* I can view my order history.
+* I can view blog posts.
+* I can like/unlike blog posts.
+* I can comment and delete my own comments on blog posts.
+* I can view the supplliers and their websites.
+
+### Admin
+
+As well as having the same abilities as users, admins also have the additional User Stories.
+
+### As an Admin
+
+* I can create blog posts.
+* I can update/delete blog posts.
+* I can add new products.
+* I can update/delete existing products.
+* I can delete user blog comments if inappropriate.
+* I can add, edit and delete suppliers info.
+
+### Discarded User Stories
+
+These user/admin user stories unfortunately were dropped due to time constraints.
+
+* As a user I can check a map for cafes nearby.
+* As a user I can categorise products by prices and category.
+* As a user I can use social platforms to register to the site.
+
+
+## Database Models
+
+There are several database Models created for the site and the different apps within it.
+
+### Blog Model
+
+#### Post
+    title = models.CharField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique=True)
+    author = models.ForeignKey(User, on_delete=models.CASCADE,
+                               related_name="blog_posts")
+    created_on = models.DateField(auto_now_add=True)
+    featured_image = models.ImageField(null=True, blank=True)
+    content = models.TextField()
+    excerpt = models.TextField(blank=True)
+    updated_on = models.DateTimeField(auto_now=True)
+    status = models.IntegerField(choices=STATUS, default=0)
+    likes = models.ManyToManyField(UserProfile, related_name="post_likes",
+                                   blank=True)
+
+#### Comment
+    post = models.ForeignKey(Post, on_delete=models.CASCADE,
+                             related_name="comments")
+    name = models.ForeignKey(User, on_delete=models.CASCADE,
+                             related_name="user_comments")
+    body = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
