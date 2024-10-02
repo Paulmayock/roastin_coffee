@@ -111,7 +111,7 @@ input[name='q']::placeholder {
 #contact {
     position: relative;
     background: #d6cfcb;
-
+    padding-left: 15px;
 }
 
 #contact .bg-image {
