@@ -16,35 +16,35 @@
             <div class="col text-center mt-3">
                 <h2 class=>Suppliers</h2>
                 <hr class="w-50 mb-1">
-                <p>Where we get our coffee from</p>
+                <h4>Where we get our coffee from</h4>
             </div>
         </div>
-        <!-- Display Sponsors -->
+        <!-- Display suppliers -->
         <div class="row">
             <div class="classes-container col-10 offset-1">
                 <div class="row">
-                {% for sponsor in sponsors_list %}
-                    <div class="col-sm-6 col-md-6 col-lg-3 mt-2 mb-2">
+                {% for supplier in suppliers_list %}
+                    <div class="col-sm-6 col-md-6 col-lg-6 mt-2 mb-2">
                         <div class="card mb-4 h-100 text-center border-0">
                             <div class="card-title">
-                                <h2>{{ sponsor.sponsor_name }}</h2>
+                                <h2>{{ supplier.supplier_name }}</h2>
                             </div>
                             <div class="card-body justify-content-md-center">
                                 <div class="image-container">
-                                    {% if sponsor.sponsor_image %}
-                                        <a rel="nofollow" href="{{ sponsor.sponsor_website }}" class="post-link" target="_blank">
-                                            <img class="card-img-top" src="{{ sponsor.sponsor_image.url }}" alt="sponsor-image">
+                                    {% if supplier.supplier_image %}
+                                        <a rel="nofollow" href="{{ supplier.supplier_website }}" class="post-link" target="_blank">
+                                            <img class="card-img-top" src="{{ supplier.supplier_image.url }}" alt="supplier-image">
                                         </a>
                                     {% else %}
-                                        <a rel="nofollow" href="{{ sponsor.sponsor_website }}" class="post-link" target="_blank">
-                                            <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="sponsor-image">
+                                        <a rel="nofollow" href="{{ supplier.supplier_website }}" class="post-link" target="_blank">
+                                            <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="supplier-image">
                                         </a>
                                     {% endif %}
-                                    <p>{{ sponsor.sponsor_bio }}</p>
+                                    <p>{{ supplier.supplier_bio }}</p>
                                 </div>
                                 <div class="card-footer">
-                                    <p>Visit {{ sponsor.sponsor_name }}
-                                        <a rel="nofollow" href="{{ sponsor.sponsor_website }}" class="post-link" target="_blank">
+                                    <p>Visit {{ supplier.supplier_name }}
+                                        <a rel="nofollow" href="{{ supplier.supplier_website }}" class="post-link" target="_blank">
                                             here</a>
                                     </p>
                                 </div>
