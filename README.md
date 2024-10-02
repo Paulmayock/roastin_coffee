@@ -237,7 +237,7 @@ Some features I would like to implement in future releases are as follows.
 - Add a more fixed search engine to search coffee from prices and category.
 - Add a forgotten password option on sign in if users have forgotten username or password which can be rest.
 
-# Testing 
+## Testing 
 
 ## User story testing
 #### About The website
@@ -306,3 +306,17 @@ Some features I would like to implement in future releases are as follows.
 *As a user I want to be able to save profile info so the website remembers me when I login again*
 - Users should be able to save their info so to not have to enter their info everytime they checkout with their cart.
 
+## Manual Testing
+| Feature               | Test Performed                                                     | Result  |
+|-----------------------|--------------------------------------------------------------------|---------|
+| Register button | Clicking on the button redirects to the sign up form                     | Pass   |
+| Login button | Clicking on the button redirect to the login form                          | Pass    |
+| Logout button | When logged in the app, the link in the top right corner changes to Logout  | Pass    |
+| Add Product | Once logged in as admin clicking on the create button allows user to add a new product          | Pass    |
+| Fill all fields when creating product | All fields must be filled when creating product or product will not be created         | Pass    |
+| Edit product | Clicking on the product the user created opens details which can be edited | Pass    |
+| Delete product  | Clicking on the product the user created opens details wherea button to delete products is present | Pass    |
+| Search product | Entering a product name or matching descriptions, a matching list should appear  | Pass    |
+| Header title  | Make sure that the correct title displayed when open either the Add or Edit form  | Pass    |
+| Responsiveness | The website layout changes depending on the viewed devices         | Pass      |
+| Social icons | When clicking on a social icon in the footer it opens the correct web address in the new tab       | Pass      |
