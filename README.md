@@ -228,3 +228,81 @@ Users can sign out using the logout button from the my account logo.
 A message will appear once the user has signed out to show they have signed out successfully.
 
 ![Success message](docs/images/success_message.PNG)
+
+## Future Features
+
+Some features I would like to implement in future releases are as follows.
+- Add a map so users can search locations of cafes in their area.
+- Add a rating system so users can rate the coffee and products.
+- Add a more fixed search engine to search coffee from prices and category.
+- Add a forgotten password option on sign in if users have forgotten username or password which can be rest.
+
+# Testing 
+
+## User story testing
+#### About The website
+*As a User I want to understand what the website is about.*
+- On the home page there is information that shows the user the purpose of the webbsite.
+
+#### Sign up
+*As a User I can Sign upto an account so that I can add purchase products.*
+- On the home page there is a My Account button.  If a User clicks on this button, they will be see an option to register so they can sign up. Once they sign 
+  up they will be able to purchase products.
+
+#### Sign in/Logout
+*As a user I can login and logout so I can so nobody else can view or use my profile.*
+- When a User is not logged in, the My Account/Login button is visible in the top right of the website. When the user clicks on the login button, they are redirected to the sign in  
+  page where 
+  they need to enter their user name and password. In the top right corner of the website the user will see the option to logout from the account.
+- After clicking on Logout button, the user automatically redirected to the home page.
+
+#### Product List
+*As a user I can see the product list with an image attached of that product.*
+- When a user clicks on the Products button they can see the list of products available.
+
+#### Product Details
+*As a user I want to click on a product and see the type of product, product details and cost of the product*
+- When a user clicks on a product it shows the type of product, the description and price.
+
+#### Product Search
+*As a user I want to be able to search a product by the product name*
+- On the footer page there is a search box. If a users enters a product name a matching list should appear.
+
+#### Adding a Product  
+*As a owner I want to be able to add a products*
+- Once a admin is logged in they can add products to the website.
+
+#### Edit a Product
+*As a owner I want to be able to edit a product which I created in case I need to edit the information*
+- Once logged in a admin er can search products they created by searching their name. 
+- When they click on a product their should be an option to edit the product.
+- Only a admin can edit the products.
+
+#### Deleting a Product
+*As a admin I want to be able to delete a product which I created in case I want it removed from the list*
+- Once logged in a user can search products they created by searching their name. 
+- When they click on a product their should be an option to delete the product.
+- Only the user who created the product can delete the product.
+
+#### View Blog
+
+*As a user I want to be able to view blog entries*
+- Users should be able to view blog entries.
+
+#### View Suppliers
+
+*As a user I want to be able to view suppliers*
+- Users should be able to view the coffee suppliers.
+- When clicking on the View link users should be redirected to the suppliers website.
+
+#### View and Edit items to cart
+*As a user I want to be able to add items to a shopping cart*
+- Users should be able to add items to shopping cart.
+- Users should be able to view what is currently in the shopping cart.
+- Users should be able to edit items in the shopping cart.
+
+#### Save Profile Info
+
+*As a user I want to be able to save profile info so the website remembers me when I login again*
+- Users should be able to save their info so to not have to enter their info everytime they checkout with their cart.
+
