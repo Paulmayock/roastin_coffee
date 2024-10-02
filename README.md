@@ -150,7 +150,7 @@ There are several database Models created for the site and the different apps wi
 
 ### Profile Model
 
-### UserProfile
+#### UserProfile
    
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     default_phone_number = models.CharField(max_length=20, null=True, blank=True)
@@ -168,3 +168,63 @@ There are several database Models created for the site and the different apps wi
     supplier_bio = models.TextField(null=False)
     supplier_image = models.ImageField(null=True, blank=True)
     supplier_website = models.TextField(null=False)
+
+## Website Design
+
+The sites design takes a lot of styling from the Code Institute Boutique Ado follow along lessons. I used the lessons as a base for the website and then added my own styles and models to make the project more of my own work. 
+
+### Main page, header and footer
+
+The header includes the Roastin Coffee name, search bar, nav bar, login button from my account and a cart for how much the items accumulate to in the current cart.
+The main screen shows an image of a cup of coffee and beans and adds a nice background so it can give users a good idea of what the websites main business is.
+The footer includes contact details, a contact link so users can reach out to the owner, a link to view the business facebook page and a subscription linkso users can subscribe.
+
+![Main header](docs/images/main_header.PNG)
+
+![Main footer](docs/images/main_footer.PNG)
+
+### Products
+
+The products page shows all the products available to be purchased by the user. When a product is clicked the product description is displayed so the user has a better detail fo what type of product they are purchasing. From here the user can choose how many products they wish to purchase.
+
+![Products main page]()
+![Products description page]()
+
+
+### Blog
+
+Users can see blog posts which have been added.
+
+![Blog](docs/images/blog.PNG)
+
+### Suppliers
+
+Users can view where the owner supplies their coffee from, some info about these suppliers and a link which brings the user to the suppliers website.
+
+![Suppliers](docs/images/suppliers_top.PNG)
+
+![Suppliers info](docs/images/suppliers_bottom.PNG)
+
+### Sign up 
+
+Users can sign up using the by clicking on my account and then clicking on register.
+
+![Sign up](docs/images/signup.PNG)
+
+### Sign in
+
+Users can sign in by clicking on my account and then login.
+
+![Sign in](docs/images/signin.PNG)
+
+### Sign Out
+
+Users can sign out using the logout button from the my account logo.
+
+![Logout](docs/images/sign_out.PNG)
+
+### Success message
+
+A message will appear once the user has signed out to show they have signed out successfully.
+
+![Success message](docs/images/success_message.PNG)
