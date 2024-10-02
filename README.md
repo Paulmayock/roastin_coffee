@@ -20,6 +20,21 @@ To keep registered users up to date with changes to the business and new promoti
 
 ![Facebook posts](docs/images/facebook_posts.png)
 
-## Wireframes
+## Planning
+
+### Wireframes
 
 Below is a set of wireframes designs to brainstorm ideas of what the website would look like
+
+![Main page](docs/images/wireframe_main_page.png)
+
+![Products](docs/images/wireframe_products.png)
+
+![Blog](docs/images/wireframe_blog.png)
+
+![Suppliers](docs/images/wireframe_suppliers.png)
+
+### User Stories
+
+As part of the Agile process I created user stories to aid with planning for the project. Although these were added to the project board in the final stages of the project, they were brainstormed before and during the project completion.
+
