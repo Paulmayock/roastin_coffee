@@ -310,13 +310,27 @@ Some features I would like to implement in future releases are as follows.
 | Feature               | Test Performed                                                     | Result  |
 |-----------------------|--------------------------------------------------------------------|---------|
 | Register button | Clicking on the button redirects to the sign up form                     | Pass   |
-| Login button | Clicking on the button redirect to the login form                          | Pass    |
+| Login button | Clicking on the button redirect to the Sign in form                          | Pass    |
 | Logout button | When logged in the app, the link in the top right corner changes to Logout  | Pass    |
-| Add Product | Once logged in as admin clicking on the create button allows user to add a new product          | Pass    |
-| Fill all fields when creating product | All fields must be filled when creating product or product will not be created         | Pass    |
+| Add Product | Once logged in as admin, clicking on products and then on the create button allows user to add a new product          | Pass    |
+| Fill all fields when creating product | All mandatory fields must be filled when creating product or product will not be created         | Pass    |
 | Edit product | Clicking on the product the user created opens details which can be edited | Pass    |
 | Delete product  | Clicking on the product the user created opens details wherea button to delete products is present | Pass    |
 | Search product | Entering a product name or matching descriptions, a matching list should appear  | Pass    |
 | Header title  | Make sure that the correct title displayed when open either the Add or Edit form  | Pass    |
 | Responsiveness | The website layout changes depending on the viewed devices         | Pass      |
-| Social icons | When clicking on a social icon in the footer it opens the correct web address in the new tab       | Pass      |
+| Social icon | When clicking on a social icon in the footer it opens the correct web address in the new tab       | Pass      |
+| Home button | When clicking on the home button the user is directed to the home page | Pass |
+| Products button | When clicking on the products button the user is brought to the products page | Pass |
+| Blog button | When clicking on the blog button the user is brought to the blog page | Pass |
+| Suppliers button | When clicking on the suppliers button the user is brought to the suppliers page | Pass |
+| My account button | When clicking on the My Account button the user has the option to register or login | Pass |
+| My profile button | When logged in, when the user clicks the my profile button they are redirected to their profile | Pass |
+| Cart button | When the cart icon is clicked on the user is redriected to the cart page to show what they have currently in their shopping cart | Pass |
+| Add items to cart | Users are able to add item to their cart and a message appears to show what and how man items have been added | Pass |
+| Edit items in cart | Users are able to edit items in their cart and a message appears to show the updated cart items | Pass |
+| Remove items to cart | Users are able to add remove items from their cart and a message appears to show what and how man items have been removed | Pass |
+| Keep shopping button | When in the cart page when the keep shopping button is clicked the user is redirected to products page | Pass |
+| Checkout button | When in secure checkout button is clicked on the cart page the user is redirected to the checkout page | Pass |
+
+
