@@ -346,3 +346,8 @@ Some features I would like to implement in future releases are as follows.
 Unfortunately I did not have time to resolev the below bugs I encountered. 
 
 * **Toast notification:**
+Unfortunately when a toast message appears the X button to close does not work
+
+* **Email notification:**
+Unfortunately the e-mail confirmation does not work. The page shows the email confirmation but this does not send to the mail
+
