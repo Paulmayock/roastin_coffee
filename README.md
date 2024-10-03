@@ -169,6 +169,11 @@ There are several database Models created for the site and the different apps wi
     supplier_image = models.ImageField(null=True, blank=True)
     supplier_website = models.TextField(null=False)
 
+### Database relationships
+A relation database image was created using Db visulaizer    
+
+![Database relationship](docs/images/ER_diagram.jpg)
+
 ## Website Design
 
 The sites design takes a lot of styling from the Code Institute Boutique Ado follow along lessons. I used the lessons as a base for the website and then added my own styles and models to make the project more of my own work. 
@@ -187,8 +192,8 @@ The footer includes contact details, a contact link so users can reach out to th
 
 The products page shows all the products available to be purchased by the user. When a product is clicked the product description is displayed so the user has a better detail fo what type of product they are purchasing. From here the user can choose how many products they wish to purchase.
 
-![Products main page]()
-![Products description page]()
+![Products main page](docs/images/products_page.PNG)
+![Products description page](docs/images/product_cart.PNG)
 
 
 ### Blog
@@ -351,3 +356,12 @@ Unfortunately when a toast message appears the X button to close does not work
 * **Email notification:**
 Unfortunately the e-mail confirmation does not work. The page shows the email confirmation but this does not send to the mail
 
+* **Blog submit:**
+Unfortunately the blog submit button does not submit a blog. This was working previously but unfortunately I ran out of time to fox this.
+
+
+## Validation testing
+
+### Code Validation
+
+#### HTML
