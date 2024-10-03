@@ -326,11 +326,23 @@ Some features I would like to implement in future releases are as follows.
 | Suppliers button | When clicking on the suppliers button the user is brought to the suppliers page | Pass |
 | My account button | When clicking on the My Account button the user has the option to register or login | Pass |
 | My profile button | When logged in, when the user clicks the my profile button they are redirected to their profile | Pass |
-| Cart button | When the cart icon is clicked on the user is redriected to the cart page to show what they have currently in their shopping cart | Pass |
+| Shopping Cart button | When the shopping cart icon is clicked on the user is redriected to the cart page to show what they have currently in their shopping cart | Pass |
 | Add items to cart | Users are able to add item to their cart and a message appears to show what and how man items have been added | Pass |
 | Edit items in cart | Users are able to edit items in their cart and a message appears to show the updated cart items | Pass |
 | Remove items to cart | Users are able to add remove items from their cart and a message appears to show what and how man items have been removed | Pass |
 | Keep shopping button | When in the cart page when the keep shopping button is clicked the user is redirected to products page | Pass |
 | Checkout button | When in secure checkout button is clicked on the cart page the user is redirected to the checkout page | Pass |
+| Add items to cart | Users are able to add item to their cart and a message appears to show what and how man items have been added | Pass |
+| Free Delivery | When a user spends over $50 the delivery will be free | Pass |
+| Adjust cart | When the user clicks on adjust cart button from the checkout page they will be redirected to the shopping cart | Pass |
+| Complete order | When all manadatory items are filled out in the form and complete order button is clicked a thank you message with order info will appear | Pass |
+| Save information button | When the button Save this information to my profile is ticked the entered information will be saved for the future purchaes | Pass |
+| Mandatory form details | All mandatory form details must be filled out or the user cannnot complete their order and a message will appear to tell the user this | Pass |
+| Incorrect card details | If incorrect card details are entered a message sayign you car number is invalid| Pass |
+| Check out more deals button | From the checkout success page when the check out more deals button is clicked it redirects the user to the products page | Pass |
 
+### Unresolved bugs
 
+Unfortunately I did not have time to resolev the below bugs I encountered. 
+
+* **Toast notification:**
