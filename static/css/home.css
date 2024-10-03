@@ -1,5 +1,5 @@
 body {
-    background: url('/media/homepage_background.jpg') no-repeat center center fixed;
+    background: url('../images/homepage_background.jpg') no-repeat center center fixed;
     background-size: cover;
     width: 100%;
     color: #c28369;
