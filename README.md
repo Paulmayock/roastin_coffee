@@ -357,7 +357,7 @@ Unfortunately when a toast message appears the X button to close does not work
 Unfortunately the e-mail confirmation does not work. The page shows the email confirmation but this does not send to the mail
 
 * **Blog submit:**
-Unfortunately the blog submit button does not submit a blog. This was working previously but unfortunately I ran out of time to fox this.
+Unfortunately the blog submit button does not submit a blog. This was working previously but unfortunately I ran out of time to fix this.
 
 
 ## Validation testing
