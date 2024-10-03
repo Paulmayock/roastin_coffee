@@ -365,3 +365,4 @@ Unfortunately the blog submit button does not submit a blog. This was working pr
 ### Code Validation
 
 #### HTML
+
