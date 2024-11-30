@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /admin/
+Sitemap: https://roastin-coffee-847d35823b48.herokuapp.com/sitemap.xml
