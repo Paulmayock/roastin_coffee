@@ -2,10 +2,12 @@ from django.shortcuts import render
 
 # Create your views here.
 
+
 def index(request):
     """ A view to return to the index page """
 
     return render(request, 'home/index.html')
+
 
 def contact_form(request):
     """ A view for contact form """
@@ -20,4 +22,4 @@ def contact_form(request):
         contact.subject = subject
         contact.save()
         messages.success(request, 'Thank you for contacting us')
-    return render(request, 'home/contact.html')    
+    return render(request, 'home/contact.html')

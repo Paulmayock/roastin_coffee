@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Suppliers(models.Model):
     supplier_name = models.CharField(max_length=100, null=False, blank=False)
     supplier_bio = models.TextField(null=False)
