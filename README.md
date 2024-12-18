@@ -364,5 +364,74 @@ Unfortunately the blog submit button does not submit a blog. This was working pr
 
 ### Code Validation
 
-#### HTML
+#### HTML Validation
 
+#### CSS Validation
+
+![CSS validation](docs/images/CSS_validator.PNG)
+
+#### PEP Validation
+
+The code institure PEP validator was used to validate a number of python files from the project to make sure the python files are correctly 
+indented as could be. There are few very minimal errors where the character lenght was logner by 1. As these are very minimal, these files were left as is 
+so the functionalty of the scripts could run without issue.
+Below is an screenshot of the files passed through the PEP validator
+
+![PEP files](docs/images/PEP_files.PNG)
+
+## Deployment
+
+#### Heroku
+
+- The requirements.txt file in the IDE must be updated to package all dependencies. To do this:
+
+- Enter the following into the terminal: 'pip3 freeze > requirements.txt'
+- Commit the changes and push to GitHub
+- Sign in to heroku
+
+- On the heroku dashboard click the create new app button
+
+- Name the app something unique and choose what region you are in then click create app
+
+- Go to the settings tab and the config vars section. Click reveal config vars
+
+- Add the cloudinary_url, databse_url and secret_key plus their values in the fields
+
+- In the field for VALUE copy and paste the entire contents of your creds.json file from your project. Then click add
+
+- Scroll down to the Buildpacks section and click add buildpack
+
+- Click Python then save changes
+
+- Make sure that Python appears above Nodejs in the buildpack section. If it does not you can click and drag them to change the order
+
+- Go to the deploy section by clicking deploy from the nav bar at the top of the page
+
+- On the deployment method section select GitHub and click connect to GitHub
+
+- Enter the repository name as it is in GitHub and click search
+
+- Click the connect button next to the repository to link it to heroku
+
+- To deploy, scroll down and click the deploy branch button
+
+- Heroku will notify you that the app was successfully deployed with a button to view the app
+
+ # Technologies and sites used
+- Django - Free and open-source, Python-based web framework that follows the model–template–views (MTV) architectural pattern.
+- Python - General-purpose programming language. 
+- Bootstrap - Free front-end framework for faster and easier web development.
+- HTML - The standard markup language for Web pages.
+- CSS -  style sheet language used for describing the presentation of a document written in a markup language such as HTML.
+- JavaScript - lightweight interpreted  programming language with first-class functions.
+- Github - platform and cloud-based service for software development and version control using Git.
+- Gitpod - cloud development environment to efficiently and securely develop software. 
+- Heroku - platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
+
+## Credits
+
+- Code Institute's "Boutique Ado" walk through provided fundamentals of creating a project with Django.
+
+- Daisy Mcgirr who helped me with my project setup and ideas for a project and throughout.
+
+- StackOverflow and Slack communinity for tips on how to write some of code for my project.
