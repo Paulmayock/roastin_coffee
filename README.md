@@ -427,6 +427,9 @@ Below is an screenshot of the files passed through the PEP validator
 - Github - platform and cloud-based service for software development and version control using Git.
 - Gitpod - cloud development environment to efficiently and securely develop software. 
 - Heroku - platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
+- Stripe - payment system used for test payments for checkout.
+- Mailchimp - used for newsletter subsciption service.
+
 
 ## Credits
 
