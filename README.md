@@ -34,6 +34,8 @@ Below is a set of wireframes designs to brainstorm ideas of what the website wou
 
 ![Suppliers](docs/images/wireframe_suppliers.png)
 
+![Contact Form](docs/images/Contact_form.PNG)
+
 ### User Stories
 
 As part of the Agile process I created user stories to aid with planning for the project. Although these were added to the project board in the final stages of the project, they were brainstormed before and during the project completion.
@@ -51,6 +53,7 @@ As part of the Agile process I created user stories to aid with planning for the
 * I can like/unlike blog posts.
 * I can comment and delete my own comments on blog posts.
 * I can view the supplliers and their websites.
+* I can contact the owner via a contact form in case I have a payment issue, account issue or other general queries.
 
 ### Admin
 
@@ -161,13 +164,24 @@ There are several database Models created for the site and the different apps wi
     default_postcode = models.CharField(max_length=20, null=True, blank=True)
     default_country = CountryField(blank_label='Country', null=True, blank=True)
 
-### Suppliers
+### Suppliers Model
 
 #### Suppliers
     supplier_name = models.CharField(max_length=100, null=False, blank=False)
     supplier_bio = models.TextField(null=False)
     supplier_image = models.ImageField(null=True, blank=True)
     supplier_website = models.TextField(null=False)
+
+### Contact Model
+
+#### Contact Models
+    name = models.CharField(max_length=100, null=False, blank=False)
+    email = models.EmailField(null=True, blank=True)
+    phone_number = models.CharField(max_length=80, null=True, blank=True)
+    query = models.CharField(
+        max_length=40, choices=CONTACT_CHOICE, default="GENERAL QUERY"
+    )
+    comments = models.CharField(max_length=2000, null=False, blank=False)
 
 ### Database relationships
 A relation database image was created using Db visulaizer    
@@ -181,8 +195,9 @@ The sites design takes a lot of styling from the Code Institute Boutique Ado fol
 ### Main page, header and footer
 
 The header includes the Roastin Coffee name, search bar, nav bar, login button from my account and a cart for how much the items accumulate to in the current cart.
+A contact form link was also added under on the My Account link.
 The main screen shows an image of a cup of coffee and beans and adds a nice background so it can give users a good idea of what the websites main business is.
-The footer includes contact details, a contact link so users can reach out to the owner, a link to view the business facebook page and a subscription linkso users can subscribe.
+The footer includes contact details, a contact link so users can reach out to the owner, a link to view the business facebook page and a newsletter subscription link so users can subscribe a newsletter.
 
 ![Main header](docs/images/main_header.PNG)
 
@@ -233,6 +248,12 @@ Users can sign out using the logout button from the my account logo.
 A message will appear once the user has signed out to show they have signed out successfully.
 
 ![Success message](docs/images/success_message.PNG)
+
+### Contact Form
+
+A contact form is available under the My Account link where users can contact the owner for any issues or general enquires they may have 
+
+![Contact Form](docs/images/Contact.PNG)
 
 ## Future Features
 
@@ -345,19 +366,6 @@ Some features I would like to implement in future releases are as follows.
 | Mandatory form details | All mandatory form details must be filled out or the user cannnot complete their order and a message will appear to tell the user this | Pass |
 | Incorrect card details | If incorrect card details are entered a message sayign you car number is invalid| Pass |
 | Check out more deals button | From the checkout success page when the check out more deals button is clicked it redirects the user to the products page | Pass |
-
-### Unresolved bugs
-
-Unfortunately I did not have time to resolev the below bugs I encountered. 
-
-* **Toast notification:**
-Unfortunately when a toast message appears the X button to close does not work
-
-* **Email notification:**
-Unfortunately the e-mail confirmation does not work. The page shows the email confirmation but this does not send to the mail
-
-* **Blog submit:**
-Unfortunately the blog submit button does not submit a blog. This was working previously but unfortunately I ran out of time to fix this.
 
 
 ## Validation testing
