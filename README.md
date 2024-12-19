@@ -379,6 +379,8 @@ Some features I would like to implement in future releases are as follows.
 
 #### HTML Validation
 
+Unfortunately there is some HTML errors which due to time constarints have not been tested fully via the validators.
+
 #### CSS Validation
 
 The CSS passed through the W3C Validator with no errors as seen in the image below.
@@ -432,7 +434,7 @@ Below is an screenshot of the files passed through the PEP validator
 
 - Heroku will notify you that the app was successfully deployed with a button to view the app
 
- # Technologies and sites used
+### Technologies and sites used
 - Django - Free and open-source, Python-based web framework that follows the model–template–views (MTV) architectural pattern.
 - Python - General-purpose programming language. 
 - Bootstrap - Free front-end framework for faster and easier web development.
@@ -447,6 +449,12 @@ Below is an screenshot of the files passed through the PEP validator
 - Balsamiq - used to create wireframes
 - Lucidchart - used to create wireframes
 
+### Bugs and Issues
+
+After resubmitting my final project I was able to correct a few bugs including the checkout of items which previously gave a 500 server error.
+I was also able to correct the toast message X closing button which previously did not work but is now functional.
+The one issue I would like to correct and work furthe on in the future is the HTML validation. Even though the website appears fully functional 
+I would like to validate the HTML with more time so code is easier to read.
 
 ## Credits
 
