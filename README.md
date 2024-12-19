@@ -5,7 +5,7 @@ Roastin Coffee is currently a fictional coffee website. It is for people interes
 
 ## E-Commerce Business Model
 
-Roastin Coffee is a B2C type application. The site will sell directly to consumers in small quantities.
+Roastin Coffee is a Business to Customer B2C type application. The site will sell directly to consumers in small quantities.
 
 ## Marketing Strategies.
 
@@ -332,6 +332,11 @@ Some features I would like to implement in future releases are as follows.
 *As a user I want to be able to save profile info so the website remembers me when I login again*
 - Users should be able to save their info so to not have to enter their info everytime they checkout with their cart.
 
+#### Contact the owner
+
+*As a user I want to be able to contact the user via a contact form in case I have issues with an order, account details or general queries*
+- Users should be able to contact the owner for issues with orders, accounts or general queries.
+
 ## Manual Testing
 | Feature               | Test Performed                                                     | Result  |
 |-----------------------|--------------------------------------------------------------------|---------|
@@ -376,13 +381,15 @@ Some features I would like to implement in future releases are as follows.
 
 #### CSS Validation
 
+The CSS passed through the W3C Validator with no errors as seen in the image below.
+
 ![CSS validation](docs/images/CSS_validator.PNG)
 
 #### PEP Validation
 
 The code institure PEP validator was used to validate a number of python files from the project to make sure the python files are correctly 
 indented as could be. There are few very minimal errors where the character lenght was logner by 1. As these are very minimal, these files were left as is 
-so the functionalty of the scripts could run without issue.
+so the functionalty of the scripts could run without issue. These files were webhook handler and webhooks.
 Below is an screenshot of the files passed through the PEP validator
 
 ![PEP files](docs/images/PEP_files.PNG)
@@ -437,6 +444,8 @@ Below is an screenshot of the files passed through the PEP validator
 - Heroku - platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
 - Stripe - payment system used for test payments for checkout.
 - Mailchimp - used for newsletter subsciption service.
+- Balsamiq - used to create wireframes
+- Lucidchart - used to create wireframes
 
 
 ## Credits
