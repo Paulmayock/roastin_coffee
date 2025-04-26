@@ -133,14 +133,6 @@ There are several database Models created for the site and the different apps wi
     quantity = models.IntegerField(null=False, blank=False, default=0)
     lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)     
 
-### Contact Model
-
-#### Contact
-    """Contact, receive subject from the users """
-    name = models.CharField(max_length=200)
-    email = models.EmailField()
-    subject = models.TextField()
-
 ### Products
 
 #### Product
