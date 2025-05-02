@@ -470,15 +470,16 @@ Below is an screenshot of the files passed through the PEP validator
 - Heroku - platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
 - Stripe - payment system used for test payments for checkout.
 - Mailchimp - used for newsletter subsciption service.
-- Balsamiq - used to create wireframes
-- Lucidchart - used to create wireframes
+- Balsamiq - used to create wireframes.
+- Lucidchart - used to create wireframes.
+- W3C - Used to validate HTML and CSS code.
+- Code Institute PEP8 CI Python Linter - Used to validate Python code.
 
 ### Bugs and Issues
 
 After resubmitting my final project I was able to correct a few bugs including the checkout of items which previously gave a 500 server error.
 I was also able to correct the toast message X closing button which previously did not work but is now functional.
-The one issue I would like to correct and work furthe on in the future is the HTML validation. Even though the website appears fully functional 
-I would like to validate the HTML with more time so code is easier to read.
+There were many HTML validator issues I corrected and all that is remaining is some warnings.
 
 ## Credits
 
