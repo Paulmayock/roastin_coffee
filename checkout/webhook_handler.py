@@ -50,6 +50,8 @@ class StripeWH_Handler:
         pid = intent.id
         cart = intent.metadata.cart
         save_info = intent.metadata.save_info
+        import logging
+        logging.getLogger(__name__).info('Intent: %s', intent)
 
         billing_details = intent.charges.data[0].billing_details
         shipping_details = intent.shipping
