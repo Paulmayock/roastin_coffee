@@ -387,23 +387,23 @@ There are no HTML errors, only some warnings in relation to script tag not requi
 
 ##### Suppliers page
 
-![HTML validator suppliers page](docs/images/html_validator_suppliers.PNG)
+![HTML validator suppliers page](docs/images/HTML_validator_suppliers.PNG)
 
 ##### Profile page
 
-![HTML validator profile page](docs/images/html_validator_products.PNG)
+![HTML validator profile page](docs/images/HTML_validator_products.PNG)
 
 ##### Contact Us page
 
-![HTML validator contact us page](docs/images/html_validator_contact.PNG)
+![HTML validator contact us page](docs/images/HTML_validator_contact.PNG)
 
 ##### Cart page
 
-![HTML validator cart page](docs/images/html_validator_cart.PNG)
+![HTML validator cart page](docs/images/HTML_validator_cart.PNG)
 
 ##### Checkout page
 
-![HTML validator checkout page](docs/images/html_validator_checkout_success.PNG)
+![HTML validator checkout page](docs/images/HTML_validator_checkout_success.PNG)
 
 #### CSS Validation
 
