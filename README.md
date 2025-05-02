@@ -371,7 +371,39 @@ Some features I would like to implement in future releases are as follows.
 
 #### HTML Validation
 
-Unfortunately there is some HTML errors which due to time constarints have not been tested fully via the validators.
+There are no HTML errors, only some warnings in relation to script tag not required as you can see with the below attached screenshots of different pages which were run through the HTML W3C Markup Validation Service.
+
+##### Home page
+
+![HTML validator home page](docs\images\HTML_validator_home_page.PNG)
+
+##### Products page
+
+![HTML validator products page](docs\images\HTML_validator_products.PNG)
+
+##### Blog page
+
+![HTML validator blog page](docs\images\HTML_validator_blog.PNG)
+
+##### Suppliers page
+
+![HTML validator suppliers page](docs\images\HTML_validator_suppliers.PNG)
+
+##### Profile page
+
+![HTML validator profile page](docs\images\HTML_validator_products.PNG)
+
+##### Contact Us page
+
+![HTML validator contact us page](docs\images\HTML_validator_contact.PNG)
+
+##### Cart page
+
+![HTML validator cart page](docs\images\HTML_validator_cart.PNG)
+
+##### Checkout page
+
+![HTML validator checkout page](docs\images\HTML_validator_checkout_success.PNG)
 
 #### CSS Validation
 
