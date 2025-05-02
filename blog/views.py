@@ -14,7 +14,6 @@ def add_post(request):
     """
     View to add a blog post.
     """
-    print(request.user)
     post_form = PostForm(request.POST, request.FILES)
 
     if request.method == 'POST':
